@@ -1,0 +1,18 @@
+group 'com.peng1m'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Logger Library
+    implementation "org.slf4j:slf4j-api:1.7+"
+    implementation "ch.qos.logback:logback-classic:1.+"
+    // JUnit
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
